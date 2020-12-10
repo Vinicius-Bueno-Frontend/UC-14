@@ -1,0 +1,83 @@
+/*** IMPORTAÇÕES ***/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+/*** PADRONIZAÇÃO ***/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em; /* 16px ou tamanho 12 */
+}
+
+img {
+  max-width: 100%; /* A largura da imagem se adapta a tela */
+  height: auto;
+}
+
+/*** SMARTPHONE ***/
+
+/* Cabeçalho (Header) */
+header {
+  height: 80px;
+  padding: 10px; /* Aplica o mesmo espaçamento em todas as direções */
+}
+
+#logo img {
+  width: 77%;
+  height: 77%;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  font-size: 2.8em;
+  color: rgba(
+    153,
+    51,
+    153,
+    0.5
+  ); /* Vermelho, Verde, Azul, Transparência (0 a 1) */
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
+/* Página em construção */
+#construct {
+  text-align: center;
+  padding: 30px 0px 30px 0px; /* Top, Right, Bottom, Left */
+}
+
+#construct h2 {
+  color: #ff7043;
+}
+
+/* Rodapé */
+footer {
+  background-color: #5e35b1;
+  text-align: center;
+  padding: 30px 0px 30px 0px; /* Top, Right, Bottom, Left */
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.875em;
+}
+
+/*** DESKTOP/NOTEBOOK ***/
+
+/* (Media/Media Query) Tudo que for codificado dentro desta media tem o comportamento alterado para resoluções de tela acima de 1200px. */
+@media (min-width: 1200px) {
+  /* Rodapé */
+  footer {
+    font-size: 1em;
+    padding: 40px 0px 40px 0px;
+  }
+}
