@@ -24,12 +24,12 @@ img {
 /* Cabeçalho (Header) */
 header {
   height: 80px;
-  padding: 10px; /* Aplica o mesmo espaçamento em todas as direções */
 }
 
 #logo img {
-  width: 77%;
-  height: 77%;
+  width: 75%;
+  height: 75%;
+  padding: 12px 0px 0px 12px; /* Aplica o mesmo espaçamento em todas as direções */
 }
 
 #check {
@@ -47,6 +47,33 @@ label {
   position: fixed;
   top: 10px;
   right: 15px;
+}
+
+nav ul {
+  background-color: #6a1b9a;
+  height: 100vh; /* 100% da altura da tela do dispositivo */
+  list-style: none; /* Remove os bulets */
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  width: 100%;
+  transition: all 0.6s;
+}
+
+nav ul li {
+  padding: 20px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Quando a caixa check for selecionada, mudar a propriedade right da tag ul */
+#check:checked ~ ul {
+  right: 0;
 }
 
 /* Página em construção */
@@ -75,7 +102,59 @@ footer p {
 
 /* (Media/Media Query) Tudo que for codificado dentro desta media tem o comportamento alterado para resoluções de tela acima de 1200px. */
 @media (min-width: 1200px) {
-  /* Rodapé */
+  /* Cabeçalho (Header) */
+
+  .Layout {
+    max-width: 1140px;
+    margin: 0 auto; /* Centralização do container na página */
+    /*background-color: #ffff00; (Teste de Centralização)*/
+  }
+
+  header {
+    padding-top: 30px;
+    height: 135px;
+  }
+
+  #logo {
+    float: left;
+  }
+
+  #logo img {
+    width: 535px;
+    height: 109px;
+  }
+
+  label {
+    display: none;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 32px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    border: 0;
+  }
+
+  nav ul li a {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase; /* Transforma todo o texto em maiúsculo */
+  }
+
+  nav ul li a:hover {
+    color: #6a1b9a;
+  }
+
+  /* Rodapé (Footer) */
   footer {
     font-size: 1em;
     padding: 40px 0px 40px 0px;
