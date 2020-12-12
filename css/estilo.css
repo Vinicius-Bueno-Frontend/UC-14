@@ -29,7 +29,7 @@ header {
 #logo img {
   width: 75%;
   height: 75%;
-  padding: 12px 0px 0px 12px; /* Aplica o mesmo espaçamento em todas as direções */
+  padding: 10px 0px 0px 10px; /* Aplica o mesmo espaçamento em todas as direções */
 }
 
 #check {
@@ -76,6 +76,36 @@ nav ul li a {
   right: 0;
 }
 
+/* Banner */
+#banner {
+  background: url(../imagens/bannerlol.jpg) center;
+  height: 50vh;
+  background-size: cover; /* Tamanho real da imagem independente da tela. */
+  /*background-attachment: fixed;*/ /* Fixa o background */
+  text-align: center;
+  /* As linhas abaixo centralizam o contéudo na vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner h1 {
+  color: #ffffff;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 2em;
+}
+
+#banner h2 {
+  color: #ffffff;
+  display: none;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+/* Redes Sociais */
+#socialmedia {
+  background-color: aqua;
+}
+
 /* Página em construção */
 #construct {
   text-align: center;
@@ -86,16 +116,37 @@ nav ul li a {
   color: #ff7043;
 }
 
+/* Redes Sociais */
+#socialmedia {
+  background-color: black;
+}
+#socialmedia img {
+  width: 50px;
+  height: auto;
+}
+
+#socialmedia ul {
+  text-align: center;
+}
+
+#socialmedia ul li {
+  display: inline-block;
+  padding: 7px;
+}
+
 /* Rodapé */
 footer {
   background-color: #5e35b1;
   text-align: center;
   padding: 30px 0px 30px 0px; /* Top, Right, Bottom, Left */
+  background-color: black;
 }
 
 footer p {
   color: #ffffff;
   font-size: 0.875em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 /*** DESKTOP/NOTEBOOK ***/
@@ -111,7 +162,7 @@ footer p {
   }
 
   header {
-    padding-top: 30px;
+    padding-top: 15px;
     height: 135px;
   }
 
@@ -152,6 +203,21 @@ footer p {
 
   nav ul li a:hover {
     color: #6a1b9a;
+  }
+
+  /* Banner */
+  #banner {
+    background-attachment: fixed; /* Fixa o background */
+    height: 100vh;
+  }
+
+  #banner h1 {
+    font-size: 100px;
+  }
+
+  #banner h2 {
+    display: block;
+    font-size: 50px;
   }
 
   /* Rodapé (Footer) */
