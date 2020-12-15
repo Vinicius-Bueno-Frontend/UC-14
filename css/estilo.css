@@ -101,6 +101,13 @@ nav ul li a {
   font-family: "Do Hyeon", sans-serif;
 }
 
+/* Apresentação */
+#apresentacao {
+  background: url(../imagens/torcidapresentacao.jpg) center;
+  height: 80vh;
+  background-size: cover; /* Tamanho real da imagem independente da tela. */
+}
+
 /* Redes Sociais */
 #socialmedia {
   background-color: aqua;
@@ -120,6 +127,14 @@ nav ul li a {
 #socialmedia {
   background-color: black;
 }
+
+#socialmedia h1 {
+  font-family: "Do Hyeon", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+
 #socialmedia img {
   width: 50px;
   height: auto;
@@ -132,6 +147,7 @@ nav ul li a {
 #socialmedia ul li {
   display: inline-block;
   padding: 7px;
+  padding-top: 20px;
 }
 
 /* Rodapé */
@@ -147,6 +163,10 @@ footer p {
   font-size: 0.875em;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+}
+
+footer img {
+  padding-bottom: 10px;
 }
 
 /*** DESKTOP/NOTEBOOK ***/
@@ -218,6 +238,59 @@ footer p {
   #banner h2 {
     display: block;
     font-size: 50px;
+  }
+
+  /* Apresentação */
+
+  #apresentacao {
+    background: url(../imagens/torcidapresentacao.jpg) center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover; /* Tamanho real da imagem independente da tela. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #apresentacao h1 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 20px;
+    color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #apresentacao p {
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #cartao1 {
+    width: 250px;
+    height: 350px;
+    clear: both;
+  }
+
+  #cartao1 h2 {
+    color: #ffffff;
+  }
+
+  #cartao1 p {
+    color: #ffffff;
+  }
+
+  #cartao1 ul {
+    text-align: center;
+  }
+
+  #cartao1 img {
+    width: 75%;
+    height: auto;
   }
 
   /* Rodapé (Footer) */
